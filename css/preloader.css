@@ -32,8 +32,8 @@
 .loading .ip-logo,
 .loading .ip-loader {
   opacity: 1;
-  -webkit-animation: animInitialHeader 3s cubic-bezier(0.7,0,0.3,1) both;
-  animation: animInitialHeader 3s cubic-bezier(0.7,0,0.3,1) both;
+  -webkit-animation: animInitialHeader 2s cubic-bezier(0.7,0,0.3,1) both;
+  animation: animInitialHeader 2s cubic-bezier(0.7,0,0.3,1) both;
 }
 
 @-webkit-keyframes animInitialHeader {
