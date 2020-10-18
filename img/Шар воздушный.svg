@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 169.7 162" enable-background="new 0 0 169.7 162" xml:space="preserve">
+<g id="Sky">
+</g>
+<g id="Clouds">
+</g>
+<g id="Button">
+</g>
+<g id="B1">
+</g>
+<g id="B2">
+	<g>
+		<path fill="#75AEB9" d="M142.7,117.2c-23.9,23.6-78.6,39.5-102.3,15.7S33.3,54.4,57.2,30.8s62.4-23.4,86,0.4
+			S166.6,93.6,142.7,117.2z"/>
+		<polygon fill="#4E9DA3" points="43.4,130 27.2,133.7 39.6,146.2 		"/>
+		<path fill="#4E9DA3" d="M142.7,117.2c21.7-21.5,23.8-55.4,6.2-79.3l0,0c0,0,36.3,85.6-88.7,105.3
+			C87,149.3,124.2,135.6,142.7,117.2z"/>
+	</g>
+	<g>
+		
+			<rect x="34.6" y="76.7" transform="matrix(0.9999 -1.647409e-002 1.647409e-002 0.9999 -1.5054 1.6063)" fill="none" width="124.3" height="30.9"/>
+		
+			<text transform="matrix(0.9999 -1.647000e-002 1.647000e-002 0.9999 34.524 93.8307)" fill="#252835" font-family="'CirceRounded-Regular'" font-size="23">Воздушный</text>
+	</g>
+	<path fill="#91BEC7" d="M80.3,38c-15.5,9.1-24.1,23.3-28.1,16.6s5.4-19.6,20.9-28.8s31.3-11.1,35.3-4.4
+		C112.3,28.2,95.8,28.8,80.3,38z"/>
+</g>
+<g id="B3">
+</g>
+<g id="B4">
+</g>
+<g id="Bubble1">
+</g>
+<g id="Bubble2">
+</g>
+</svg>
