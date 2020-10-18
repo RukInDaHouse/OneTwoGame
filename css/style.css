@@ -1,0 +1,20 @@
+.page {
+	width: 100vw;
+	height: 100vh;
+	position:relative
+}
+
+
+#box {
+	display: none;
+}
+.button1 {
+	position: absolute;
+	right: 0%;
+	bottom: 0;
+	z-index: 99999999;
+}
+
+.button1 img {
+	width: 100%;
+}
