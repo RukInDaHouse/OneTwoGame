@@ -1,9 +1,12 @@
+body {
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
 .page {
 	width: 100vw;
 	height: 100vh;
 	position:relative
 }
-
 
 #box {
 	display: none;
@@ -14,6 +17,16 @@
   text-align: center;
   vertical-align: middle;
   width: 300px;
+}
+
+.buttoncontainer2 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
 }
 
 .btnfos {
@@ -78,7 +91,7 @@ img {
   object-fit: contain;
 }
 
-.page:nth-child(1) {
+.page:nth-child(2) {
 	        background: url(../img/Log.svg) no-repeat center center fixed;
         background-size: cover;
 }
