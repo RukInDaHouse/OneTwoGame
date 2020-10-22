@@ -134,5 +134,37 @@ img {
 	top:0;
 	width: 50%;
 	height: 50%;
-	background: #000;
+}
+
+.quiz1 .quiz1header {
+	margin-top: 15%;
+	background: #fff;
+	height: 15%;
+	width: 100%;
+}
+
+.section {
+  margin: 10px 0;
+}
+
+#progress .item {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  border: 2px solid #FF882A;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#progress .item.current {
+  border-color: #FF882A;
+}
+
+#progress .item.complete {
+  background-color: #FF882A;
+}
+
+#progress .item:not(.complete):hover {
+  background-color: #FF882A;
 }
