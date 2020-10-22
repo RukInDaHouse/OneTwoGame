@@ -2,10 +2,19 @@ body {
 	overflow-y: hidden;
 	overflow-x: hidden;
 }
+
 .page {
 	width: 100vw;
 	height: 100vh;
 	position:relative
+}
+
+.page2 {
+	width: 100vw;
+	height: 100vh;
+	position:relative;
+	background: url(../img/Log.svg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 #box {
@@ -118,4 +127,12 @@ img {
   -webkit-transition: all 150ms linear;
   transition: all 150ms linear;
 }
-  
+
+.quiz1 {
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 50%;
+	height: 50%;
+	background: #000;
+}
