@@ -57,15 +57,16 @@
   text-decoration: none;
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
+  font-weight:bolder;
+  letter-spacing: 0px;
 }
 
 .btnfos-3:hover {
-  background: #3498db;
+  background: #FF882A;
   border: 1px solid white;
   -webkit-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 1);
   -moz-box-shadow:    2px 2px 0px 0px rgba(255, 255, 255, 1);
   box-shadow:         2px 2px 0px 0px rgba(255, 255, 255, 1);
-  font-weight: 900;
   letter-spacing: 1px;
   -webkit-transition: all 150ms linear;
   transition: all 150ms linear;
