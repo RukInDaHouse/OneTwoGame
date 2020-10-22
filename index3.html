@@ -14,18 +14,19 @@
 		<div class="page2">
 	<div class="quiz1">	
 <div class="section">
-  <div id="stmt"></div>
-  <div id="desc"></div>
+  <div class="quiz1header"><h1 id="stmt"></h1></div>
+  <h2 class="horizontalcenter" id="desc"></h2>
 </div>
 <div class="section buttons">
-	<div class="buttoncontainer">
-  <button class="btnfos btnfos-1" id="btnTrue" onclick="btnClick(true)">Правда</button>
+	<div class="btns">
+	<div class="buttoncontainer ">
+  <button class="btnfos btnfos-1" id="btnTrue" onclick="btnClick(true)">Согласен</button>
 </div>
 <div class="buttoncontainer">
-  <button class="btnfos btnfos-2" id="btnFalse" onclick="btnClick(false)">Ложь</button>
-</div>
+  <button class="btnfos btnfos-2 " id="btnFalse" onclick="btnClick(false)">Не согласен</button>
+</div></div>
 <div>
-<div id="progress" class="section"></div></div></div>
+<div id="progress" class="section horizontalcenter1"></div></div></div>
 
 
 
@@ -105,5 +106,6 @@ document.getElementById('progress').addEventListener(
 
 createProgressBar();
 showStmt(0);</script>
+
 	</body>
 </html>
