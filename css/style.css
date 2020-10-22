@@ -3,6 +3,18 @@ body {
 	overflow-x: hidden;
 }
 
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+ 
+body {
+  -webkit-animation: fade-in 2s linear; /* Safari 4+ */
+  -moz-animation: fade-in 2s linear; /* Fx 5+ */
+  -o-animation: fade-in 2s linear; /* Opera 12+ */
+  animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
+}
+
 .page {
 	width: 100vw;
 	height: 100vh;
@@ -26,7 +38,9 @@ body {
   text-align: center;
   vertical-align: middle;
   width: 300px;
+  padding: 1%; 
 }
+
 
 .buttoncontainer2 {
   display: table-cell;
@@ -132,15 +146,21 @@ img {
 	position: absolute;
 	right: 0;
 	top:0;
-	width: 50%;
+	width: 65%;
 	height: 50%;
 }
 
 .quiz1 .quiz1header {
-	margin-top: 15%;
 	background: #fff;
 	height: 15%;
-	width: 100%;
+	width: 50%;
+	text-align: center;
+	position: absolute;
+	top:20%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+
 }
 
 .section {
@@ -168,3 +188,35 @@ img {
 #progress .item:not(.complete):hover {
   background-color: #FF882A;
 }
+
+.btns {
+	position: absolute;
+	top:100%;
+	left: 25%;
+
+}
+
+.horizontalcenter {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+}
+
+.horizontalcenter1 {
+	position: absolute;
+	top:85%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+}
+
+.horizontalcenter2 {
+	position: absolute;
+	top:85%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+}
+
