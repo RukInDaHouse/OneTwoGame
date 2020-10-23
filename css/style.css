@@ -16,15 +16,15 @@ body {
 }
 
 @font-face {
-    font-family: "FuturaMediumC";
-    src: url("../fonts/FuturaMediumC.ttf") format("truetype");
+    font-family: "Akrobat Bold";
+    src: url("../fonts/akrobat-bold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "FuturaPT";
-    src: url("../fonts/FuturaPT.ttf") format("truetype");
+    font-family: "Circe Rounded";
+    src: url("../fonts/CirceRounded-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -75,9 +75,12 @@ body {
   line-height: 45px;
   margin: 0 auto 2em;
   position: relative;
-  text-transform: uppercase;
   vertical-align: middle;
   width: 100%;
+  font-family: Akrobat Bold;
+  font-weight: bold;
+  font-size: 1.5rem;
+
 }
 
 @media (min-width: 400px) {
@@ -179,10 +182,13 @@ img {
 
 .head {
 	text-align: center;
+	font-family: Circe Rounded;
+	letter-spacing: 0px;
 }
 
 .text {
 	text-align: left;
+	font-family: Circe Rounded;
 }
 
 .section {
