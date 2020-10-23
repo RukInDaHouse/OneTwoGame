@@ -15,6 +15,20 @@ body {
   animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
 }
 
+@font-face {
+    font-family: "FuturaMediumC";
+    src: url("../fonts/FuturaMediumC.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("../fonts/FuturaPT.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 .page {
 	width: 100vw;
 	height: 100vh;
