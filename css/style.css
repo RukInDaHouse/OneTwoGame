@@ -29,6 +29,12 @@ body {
     background-size: cover;
 }
 
+.text1 {
+
+	  background: url(../img/text1.svg) no-repeat;
+  background-size: cover;
+}
+
 #box {
 	display: none;
 }
@@ -165,6 +171,8 @@ img {
 
 .section {
   margin: 10px 0;
+  background: url(../img/text1.svg) no-repeat;
+  background-size: cover;
 }
 
 #progress .item {
@@ -194,29 +202,5 @@ img {
 	top:100%;
 	left: 25%;
 
-}
-
-.horizontalcenter {
-	position: absolute;
-	top:50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, 0%);
-}
-
-.horizontalcenter1 {
-	position: absolute;
-	top:85%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, 0%);
-}
-
-.horizontalcenter2 {
-	position: absolute;
-	top:85%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, 0%);
 }
 
