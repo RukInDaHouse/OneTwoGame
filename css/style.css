@@ -206,10 +206,13 @@ img {
 
 .disable {
   pointer-events: none;
-  opacity:0.5;
-  color: #000!important;
+  opacity: 0.4;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);;
   background: transparent;
   border: none;
+  position: absolute;
+  text-align: right;
 }
 
 #next_btn {
@@ -218,4 +221,7 @@ img {
   color: red;
   font-weight:bold; 
   font-size:2.5rem;
+  position: absolute;
+  text-align: right;
+  right: 0;
 }
