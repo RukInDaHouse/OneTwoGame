@@ -43,6 +43,11 @@ body {
     background-size: cover;
 }
 
+#stmt {
+  background: url(../img/buble3.svg) no-repeat center center;
+  background-size: cover;
+}
+
 #box {
 	display: none;
 }
