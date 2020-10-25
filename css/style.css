@@ -3,6 +3,12 @@ body {
 	overflow-x: hidden;
 }
 
+@media screen and (min-width: 1200px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 90%!important;
+  }
+}
+
 @-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
 @-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
 @-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
@@ -48,7 +54,23 @@ pointer-events: none;
 	height: 100vh;
 	position:relative;
 	background: url(../img/Log.svg) no-repeat center center fixed;
-    background-size: cover;
+  background-size: cover;
+}
+
+.page3 {
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  background: url(../img/parents.svg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.pad {
+  margin-top: 5%;
+}
+
+.left {
+  margin-left: 15%;
 }
 
 #stmt {
@@ -180,6 +202,8 @@ img {
 	text-align: center;
 	font-family: Circe Rounded;
 	letter-spacing: 0px;
+  background: url(../img/buble3.svg) no-repeat center center;
+  background-size: cover;
 }
 
 .text {
@@ -231,10 +255,10 @@ img {
 #next_btn {
   background: transparent;
   border: none;
-  color: red;
   font-weight:bold; 
   font-size:2.5rem;
   position: absolute;
   text-align: right;
-  right: 0;
+  right: -15%;
+  top: 0;
 }
