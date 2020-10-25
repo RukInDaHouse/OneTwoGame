@@ -20,11 +20,11 @@
                     <div class="col-md-6 mx-auto">
 <p></p>
 <div class="section">
-<h1 class="head" id="stmt"></h1>
+<h1 class="head" id="stmt"></h1><button id="next_btn" class="disable" onclick="nextQuestion()">&#5171;</button>
   <h2 class="text" id="desc"></h2>
 
-</div><button id="btnNext" type="button" disabled>Click Me!</button>
-<button id="btnAfterComplete" onclick="btnAfterComplete()">Complted</button>
+</div>
+
 <h2 class="text-center"><div class="section buttons">
 	<div class="buttoncontainer ">
   <button class="btnfos btnfos-1" id="btnTrue" onclick="btnClick(true)">Согласен</button>
@@ -36,22 +36,21 @@
 <div id="progress" class="section"></div></div></div></h2>
                         
                     </div>
-                                        
+                                   
                    
 
 
 
                         </div>
-                    </div>
+                    </div><div class="buttoncontainer2"><a href="index2.html" id="testComplete_btn" class="hide btnfos btnfos-1 transition">Вперёд</a></div>
                     </section>
 
 
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<script type="text/javascript"> 
 const data = [
-  {stmt: "Утверждение 1", desc: "Объяснение утверждения 1"},
-  {stmt: "Утверждение 2", desc: "Объяснение утверждения 2"},
-  {stmt: "Утверждение 3", desc: "Объяснение утверждения 3"},
+  {stmt: "Утверждение 1", desc: "Объяснение утверждения 1 Объяснение утверждения 1 Объяснение утверждения 1 Объяснение утверждения 1"},
+  
 ],
  nextBtn=document.querySelector("#next_btn"),
  completeElemBtn=document.querySelector('#testComplete_btn'),
