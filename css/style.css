@@ -66,6 +66,10 @@ body {
   right: 5%;
 }
 
+.buttoncontainer2 a{
+ text-decoration: none!important;
+}
+
 .btnfos {
   color: #fff;
   cursor: pointer;
@@ -217,5 +221,22 @@ img {
 #progress .item:not(.complete):hover {
   background-color: #FF882A;
 }
+.hide {
+  display:none;
+}
 
+.disable {
+  pointer-events: none;
+  opacity:0.5;
+  color: #000!important;
+  background: transparent;
+  border: none;
+}
 
+#next_btn {
+  background: transparent;
+  border: none;
+  color: red;
+  font-weight:bold; 
+  font-size:2.5rem;
+}
