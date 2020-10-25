@@ -24,6 +24,7 @@
   <h2 class="text" id="desc"></h2>
 
 </div><button id="btnNext" type="button" disabled>Click Me!</button>
+<button id="btnAfterComplete" onclick="btnAfterComplete()">Complted</button>
 <h2 class="text-center"><div class="section buttons">
 	<div class="buttoncontainer ">
   <button class="btnfos btnfos-1" id="btnTrue" onclick="btnClick(true)">Согласен</button>
@@ -47,21 +48,14 @@
 
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<script type="text/javascript"> 
-		    function time(){
-        document.getElementById('box').style = "display:block;";
-    }
-    setTimeout(time, 70000); </script>
-    <script>const data = [
+const data = [
   {stmt: "Утверждение 1", desc: "Объяснение утверждения 1"},
   {stmt: "Утверждение 2", desc: "Объяснение утверждения 2"},
   {stmt: "Утверждение 3", desc: "Объяснение утверждения 3"},
-  {stmt: "Утверждение 4", desc: "Объяснение утверждения 4"},
-  {stmt: "Утверждение 5", desc: "Объяснение утверждения 5"},
-  {stmt: "Утверждение 6", desc: "Объяснение утверждения 6"},
-  {stmt: "Утверждение 7", desc: "Объяснение утверждения 7"},
-  {stmt: "Утверждение 8", desc: "Объяснение утверждения 8"},
-  {stmt: "Утверждение 9", desc: "Объяснение утверждения 9"},
-];
+],
+ nextBtn=document.querySelector("#next_btn"),
+ completeElemBtn=document.querySelector('#testComplete_btn'),
+ item_arr=document.getElementsByClassName("item")
 
 let curStmt = 0;
 
@@ -78,8 +72,8 @@ function applyComplete(val) {
   val = (val) ? true : false;
   document.getElementById('desc').style.visibility = (val) ? 'visible' : 'hidden';
   document.getElementById('btnTrue').disabled = val;   
-  document.getElementById('btnFalse').disabled = val;
-  document.getElementById("btnNext").disabled = true;   
+  document.getElementById('btnFalse').disabled = val;  
+  checkProgressBar()
 }
 
 function createProgressBar() {
@@ -96,15 +90,40 @@ function createProgressBar() {
   }
 }
 
+function checkProgressBar(){
+  let check=0,
+      next=false
+  for(let n=0;n<item_arr.length;n++){
+    if(item_arr[n].classList.contains('complete')){
+      check++
+      item_arr[n].classList.contains('current')?next=true:false
+    }
+  }
+  next?nextBtn.classList.remove('disable'):nextBtn.classList.add('disable')
+  if(check==item_arr.length){
+    completeElemBtn.classList.remove('hide')
+    next_btn.classList.add('disable')
+  }
+  else{
+    completeElemBtn.classList.add('hide')
+  }
+}
+function nextQuestion(){
+  for(let n=0;n<item_arr.length;n++){                           
+    if(!item_arr[n].classList.contains('complete')){
+      showStmt(n)
+      break
+    }
+  } 
+}
+
 function btnClick(val) {
   data[curStmt].complete = true;
   document.getElementById('progress-item-' + curStmt).classList.add('complete');
   if (val || (curStmt === data.length - 1)) {
     applyComplete(true);
-    document.getElementById("btnNext").disabled = false;
   } else {
     showStmt(curStmt + 1);
-    document.getElementById("btnNext").disabled = false;
   }
 }
 
@@ -122,12 +141,7 @@ document.getElementById('progress').addEventListener(
 );
 
 createProgressBar();
-showStmt(0);</script>
-<script type="text/javascript">
-  if flag=1: 
-    document.getElementById("your-btn").disabled = true;
-else: 
-    document.getElementById("your-btn").disabled = false;
+showStmt(0);
 </script>
 
 	</body>
