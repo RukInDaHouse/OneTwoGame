@@ -65,6 +65,14 @@ pointer-events: none;
   background-size: cover;
 }
 
+.page4 {
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  background: url(../img/sky.svg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 .pad {
   margin-top: 5%;
 }
