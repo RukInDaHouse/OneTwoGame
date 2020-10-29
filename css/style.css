@@ -298,3 +298,49 @@ img {
   right: -15%;
   top: 0;
 }
+
+.fade-out {
+  animation: fadeOut ease 2s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {
+    opacity:0;}
+}
+
+@-moz-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-o-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-ms-keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+.circlebutton {
+  border: 4px solid #d9730d;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #d9730d;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Circe Rounded;
+} 
