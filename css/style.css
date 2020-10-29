@@ -344,7 +344,15 @@ img {
   text-align: center;
   font-size: 30px;
   font-family: Circe Rounded;
+  transition:all .5s ease-in-out;
+  cursor: pointer;
 
+}
+
+.circlebutton:hover {
+  background: #d9730d;
+  color: #FFF;
+  border: 4px solid #FFF;
 } 
 
 .scale {
@@ -355,4 +363,5 @@ img {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   margin-top: 8%;
+
 }
