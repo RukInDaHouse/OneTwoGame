@@ -21,6 +21,16 @@ body {
   animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
 }
 
+.balloons img{
+  width: 100%;
+  padding: 0!important;
+  margin: 0!important;  
+}
+.balloons {
+  padding: 0!important;
+  margin: 0!important;  
+}
+
 lottie-player {
     width: 100vw;
     height: 100vh;
@@ -69,6 +79,14 @@ pointer-events: none;
   height: 100vh;
   position:relative;
   background: url(../img/parents.svg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.page4 {
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  background: url(../img/sky.svg) no-repeat center center fixed;
   background-size: cover;
 }
 
