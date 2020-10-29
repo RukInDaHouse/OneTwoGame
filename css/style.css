@@ -21,6 +21,13 @@ body {
   animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
 }
 
+lottie-player {
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+  z-index:-999;
+}
+
 @font-face {
     font-family: "Akrobat Bold";
     src: url("../fonts/akrobat-bold.ttf") format("truetype");
