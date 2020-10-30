@@ -412,6 +412,11 @@ img {
 
 }
 
+.backgroundanimation {
+  position: absolute;
+  z-index: -99999999;
+}
+
 @media screen and (max-width: 900px) {
 .scale {
   position: absolute;
