@@ -70,7 +70,6 @@ pointer-events: none;
 	width: 100vw;
 	height: 100vh;
 	position:relative;
-	background: url(../img/Log.svg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -204,7 +203,6 @@ img {
 }
 
 .page:nth-child(2) {
-	        background: url(../img/Log.svg) no-repeat center center fixed;
         background-size: cover;
 }
 
