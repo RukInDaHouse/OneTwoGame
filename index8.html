@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title></title>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	</head>
+	<body>
+
+        <section class="about-section text-left">
+ <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_6ytza3be.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_j38sljy0.json" background="transparent" speed="1" style="width: 100%; height: 100%;"></lottie-player>
+            <div class="container">
+                <div class="row ">
+                   <div class="col-md-3 mx-auto pad"></div>
+                    <div class="col-md-3 mx-auto pad"><h1 class="head" id="stmt"></h1></div>
+                    <div class="col-md-4 mx-auto pad">
+<div class="section">
+<div>
+<div id="progress" class="section"></div></div>
+  <h2 class="text" id="desc"></h2>
+
+</div>
+
+<h2 class="text-center"><div class="section buttons">
+	<div class="buttoncontainer ">
+  <button class="btnfos btnfos-1" id="btnTrue" onclick="btnClick(true)">Говорят</button>
+</div>
+<div class="buttoncontainer">
+  <button class="btnfos btnfos-2 " id="btnFalse" onclick="btnClick(false)">Не говорят</button>
+</div>
+</div></h2>
+                        
+                    </div><div class="col-md-1 mx-auto pad"><a id="next_btn" class="disable" onclick="nextQuestion()"><img src="img/arrowactive.svg" alt="" /></a></div>
+                                   
+                   
+
+
+
+                        </div>
+                    </div><div class="buttoncontainer2"><a href="index6.html" id="testComplete_btn" class="hide btnfos btnfos-1 transition">Вперёд</a></div>
+                    </section>
+
+
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<script type="text/javascript"> 
+const data = [
+  {stmt: "Утверждение 1", desc: "Объяснение утверждения 1 Объяснение утверждения 1 Объяснение утверждения 1 Объяснение утверждения 1"},
+  {stmt: "Утверждение 2", desc: "Объяснение утверждения 2 Объяснение утверждения 2 Объяснение утверждения 2 Объяснение утверждения 2 "},
+  {stmt: "Утверждение 3", desc: "Объяснение утверждения 3 Объяснение утверждения 3 Объяснение утверждения 3 Объяснение утверждения 3 "},
+  {stmt: "Утверждение 4", desc: "Объяснение утверждения 4 Объяснение утверждения 4 Объяснение утверждения 4 Объяснение утверждения 4 "},
+  {stmt: "Утверждение 5", desc: "Объяснение утверждения 5 Объяснение утверждения 5 Объяснение утверждения 5 Объяснение утверждения 5 "},
+  {stmt: "Утверждение 6", desc: "Объяснение утверждения 6 Объяснение утверждения 6 Объяснение утверждения 6 Объяснение утверждения 6 "},
+  {stmt: "Утверждение 7", desc: "Объяснение утверждения 7 Объяснение утверждения 7 Объяснение утверждения 7 Объяснение утверждения 7 "},
+  {stmt: "Утверждение 8", desc: "Объяснение утверждения 8 Объяснение утверждения 8 Объяснение утверждения 8 Объяснение утверждения 8 "},
+  {stmt: "Утверждение 9", desc: "Объяснение утверждения 9 Объяснение утверждения 9 Объяснение утверждения 9 Объяснение утверждения 9 "},
+  {stmt: "Утверждение 10", desc: "Объяснение утверждения 8 Объяснение утверждения 8 Объяснение утверждения 8 Объяснение утверждения 8 "},
+  {stmt: "Утверждение 11", desc: "Объяснение утверждения 9 Объяснение утверждения 9 Объяснение утверждения 9 Объяснение утверждения 9 "},
+  {stmt: "Утверждение 12", desc: "Объяснение утверждения 9 Объяснение утверждения 9 Объяснение утверждения 9 Объяснение утверждения 9 "},
+  {stmt: "Утверждение 13", desc: "Объяснение утверждения 8 Объяснение утверждения 8 Объяснение утверждения 8 Объяснение утверждения 8 "},
+  
+],
+ nextBtn=document.querySelector("#next_btn"),
+ completeElemBtn=document.querySelector('#testComplete_btn'),
+ item_arr=document.getElementsByClassName("item")
+
+let curStmt = 0;
+
+function showStmt(idx) {
+  document.getElementById('progress-item-' + curStmt).classList.remove('current');
+  curStmt = idx;
+  document.getElementById('stmt').innerText = data[idx].stmt;
+  document.getElementById('desc').innerText = data[idx].desc;
+  document.getElementById('progress-item-' + idx).classList.add('current');
+  applyComplete(data[idx].complete);  
+}
+
+function applyComplete(val) {
+  val = (val) ? true : false;
+  document.getElementById('desc').style.visibility = (val) ? 'visible' : 'hidden';
+  document.getElementById('btnTrue').disabled = val;   
+  document.getElementById('btnFalse').disabled = val;  
+  checkProgressBar()
+}
+
+function createProgressBar() {
+  const parent = document.getElementById('progress');
+  parent.innerHTML = '';
+  for (let i = 0; i < data.length; i++) {
+    const item = document.createElement('div');
+    item.setAttribute('data-idx', i);
+    item.id = 'progress-item-' + i;
+    item.classList.add('item');
+    if (data[i].complete)
+      item.classList.add('complete');
+    parent.appendChild(item);
+  }
+}
+
+function checkProgressBar(){
+  let check=0,
+      next=false
+  for(let n=0;n<item_arr.length;n++){
+    if(item_arr[n].classList.contains('complete')){
+      check++
+      item_arr[n].classList.contains('current')?next=true:false
+    }
+  }
+  next?nextBtn.classList.remove('disable'):nextBtn.classList.add('disable')
+  if(check==item_arr.length){
+    completeElemBtn.classList.remove('hide')
+    next_btn.classList.add('disable')
+  }
+  else{
+    completeElemBtn.classList.add('hide')
+  }
+}
+function nextQuestion(){
+  for(let n=0;n<item_arr.length;n++){                           
+    if(!item_arr[n].classList.contains('complete')){
+      showStmt(n)
+      break
+    }
+  } 
+}
+
+function btnClick(val) {
+  data[curStmt].complete = true;
+  document.getElementById('progress-item-' + curStmt).classList.add('complete');
+  if (val || (curStmt === data.length - 1)) {
+    applyComplete(true);
+  } else {
+    showStmt(curStmt + 1);
+  }
+}
+
+document.getElementById('progress').addEventListener(
+  'click',
+  function (e) {
+    if (e.target.classList.contains('item')) {
+      const newIdx = e.target.getAttribute('data-idx') - 0;
+      if (newIdx != curStmt) {
+        showStmt(newIdx);
+      }
+    }
+  },
+  true
+);
+
+createProgressBar();
+showStmt(0);
+</script>
+
+	</body>
+</html>
