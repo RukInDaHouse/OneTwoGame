@@ -29,31 +29,33 @@
 
 </div>
 
-<h2 class="horizontalcenter"><div class="section buttons">
+<h2 class=" horizontalcenter"><div class="section buttons">
 	<div class="buttoncontainer ">
-  <button class="btnfos btnfos-01" id="btnTrue" onclick="btnClick(true)">Стоматолог</button>
+  <button class="btnfos btnfos-01" id="btnFalse" onclick="btnClick(false)">Стоматолог</button>
   <button class="btnfos btnfos-02" id="btnFalse" onclick="btnClick(false)">Ортопед</button>
   <button class="btnfos btnfos-03" id="btnFalse" onclick="btnClick(false)">Биохимик</button>
+  <button id="btnTrue" onclick="btnClick(true)" style="opacity: 0;"></button>
+
 </div>
 </div></h2>
                         
-                    </div><div class="col-md-1 mx-auto pad"><a id="next_btn" class="disable" onclick="nextQuestion()"><img src="img/arrowactive.svg" alt="" /></a></div>
+                    </div><div class="col-md-1 mx-auto pad"><a id="next_btn" class="disable" onclick="nextQuestion()"></a></div>
                                    
                    
 
 
 
                         </div>
-                    </div><div class="buttoncontainer2"><a href="index9.html" id="testComplete_btn" class="hide btnfos btnfos-1 transition">Вперёд</a></div>
+                    </div><div class="buttoncontainer2"><a href="index6.html" id="testComplete_btn" class="hide btnfos btnfos-1 transition">Вперёд</a></div>
                     </section>
 
 
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<script type="text/javascript"> 
 const data = [
-  {stmt: "Утверждение 1", desc: "Объяснение утверждения 1 Объяснение утверждения 1 Объяснение утверждения 1 Объяснение утверждения 1"},
-  {stmt: "Утверждение 2", desc: "Объяснение утверждения 2 Объяснение утверждения 2 Объяснение утверждения 2 Объяснение утверждения 2 "},
-  {stmt: "Утверждение 3", desc: "Объяснение утверждения 3 Объяснение утверждения 3 Объяснение утверждения 3 Объяснение утверждения 3 "},
+  {stmt: "Утверждение 1", desc: ""},
+  {stmt: "Утверждение 2", desc: ""},
+  {stmt: "Утверждение 3", desc: ""},
   
 ],
  nextBtn=document.querySelector("#next_btn"),
