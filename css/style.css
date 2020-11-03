@@ -413,3 +413,9 @@ img {
 
   }
 }
+
+.cross {
+  background: url(../img/Мишень.svg) no-repeat center center ;
+  background-size: cover;
+
+}
