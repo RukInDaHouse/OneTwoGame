@@ -24,10 +24,8 @@
 
         <div class='page'><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8zfg2vut.json" background="transparent" speed="1" style="width: 100%; height: 100%;" autoplay></lottie-player>          
 <lottie-player class="backgroundanimation" src="https://assets6.lottiefiles.com/packages/lf20_dqz9jtns.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
-<lottie-player class="backgroundanimation" src="https://assets8.lottiefiles.com/packages/lf20_8eg2oveq.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
-            <div class="buttoncontainer2" id="box">
-    <a href="map.html" class="btnfos btnfos-1 transition">Вперёд</a>
-</div></div>
+<lottie-player class="backgroundanimation" src="https://assets8.lottiefiles.com/packages/lf20_8eg2oveq.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player><a class="mainscreenlink" href="index3.html" id="box"></a>
+</div>
  
 <audio id="theme" autoplay="autoplay">
      <source src="./volume/ep1.mp3" />     
@@ -37,10 +35,12 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="./js/script.js"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-     <script language = 'javascript'>
-  var delay = 45000;
-  setTimeout("document.location.href='index2.html'", delay);
-</script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript"> 
+            function time(){
+        document.getElementById('box').style = "display:block;";
+    }
+    setTimeout(time, 45000); 
+    </script>
     </body>
 </html>
