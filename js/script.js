@@ -18,3 +18,18 @@ function pageTransition() {
     });
 }
 
+function contentAnimation() {
+
+    var timeline = gsap.timeline();
+
+    timeline.from('.left', {
+        duration: 1.5,
+        translateY: 50,
+        opacity: 0
+    });
+
+    timeline.to('img', {
+        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'
+    });
+}
+
