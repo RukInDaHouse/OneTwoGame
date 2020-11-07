@@ -11,7 +11,19 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 	</head>
-	<body>
+<body data-barba="wrapper">
+
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+<main data-barba="container" data-barba-namespace="home">
 
 		<div class='page'><lottie-player src="https://assets7.lottiefiles.com/packages/lf20_c9gpukkp.json" background="transparent" speed="1" style="width: 100%; height: 100%;" autoplay></lottie-player>			
 			<div class="scale anim-show">
@@ -37,7 +49,14 @@
 
 
 
-		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</main>
+
+
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<script type="text/javascript"> 
 		    function time(){
         document.getElementById('box').style = "display:block;";
