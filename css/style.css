@@ -347,6 +347,12 @@ img {
   margin: 10px 0;
 }
 
+.text-fixed {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
 #progress .item {
   height: 15px;
   width: 15px;
