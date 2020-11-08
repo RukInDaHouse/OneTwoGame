@@ -534,7 +534,7 @@ img {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   font-family: Akrobat Bold;
-  color: #000;
+  color: #FFF;
   width: 75%;
   text-align: center;
 
@@ -578,9 +578,10 @@ ul.transition li {
 }
 
 .wrapper .line {
-    height: 70px;
+    height: 100px;
     position: relative;
     overflow: hidden;
+    font-size: 2rem;
 }
 .wrapper .line span {
     position: absolute;
