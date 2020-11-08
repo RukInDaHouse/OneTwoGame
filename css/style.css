@@ -13,17 +13,6 @@ a {
   text-decoration: none!important; 
 }
 
-@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
-@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
- 
-body {
-  -webkit-animation: fade-in 2s linear; /* Safari 4+ */
-  -moz-animation: fade-in 2s linear; /* Fx 5+ */
-  -o-animation: fade-in 2s linear; /* Opera 12+ */
-  animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
-}
 
 .balloons img{
   width: 100%;
@@ -545,7 +534,7 @@ img {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   font-family: Akrobat Bold;
-  color: #FFF;
+  color: #000;
   width: 75%;
   text-align: center;
 
@@ -588,3 +577,15 @@ ul.transition li {
   width: 20%;
 }
 
+.wrapper .line {
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper .line span {
+    position: absolute;
+      top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
