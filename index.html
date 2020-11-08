@@ -6,38 +6,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title></title>
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	</head>
-	<body data-barba="wrapper" class="backgroundcolorpreview">
-        <ul class="transition">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-<main data-barba="container" data-barba-namespace="home">
-        <section class="about-section text-left">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    </head>
+    <body>
+    	        <section class="about-section text-left">
 
             <div class="container">
                 <div class="row ">
-                    <h1 class="previewtext">Этот сайт использует автоматическое воспроизведение фоновых аудиозаписей. Нажимая кнопку "Начать" и продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий. Для полного погружения рекомендуем использовать наушники.
-                     <div class="buttoncontainer3"><a href="logo.html" class="btnfos btnfos-2">Вперёд</a></div></h1>
+        <div class="wrapper previewtext">
+            <div class="line">
+                <span>Этот сайт использует автоматическое воспроизведение фоновых аудиозаписей.</span>
+            </div>
+            <div class="line">
+                <span>Нажимая кнопку "Начать" и продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.</span>
+            </div>
+            <div class="line">
+                <span>Для полного погружения рекомендуем использовать наушники.</span>
+            </div>
+           
+        </div></div></div></section>
+        <script>
+            const textrev = gsap.timeline();
 
-
-                                   
-                   
-
-
-
-                        </div>
-                    </div>
-                    </section>
-</main>
-    <script src="./js/script.js"></script>
-	</body>
+            textrev.from(".line span", 1.8, {
+                y: 200,
+                ease: "power4.out",
+                delay: 1,
+                skewY: 10,
+                stagger: {
+                    amount: 0.4,
+                },
+            });
+        </script>
+    </body>
 </html>
