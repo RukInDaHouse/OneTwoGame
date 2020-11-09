@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title></title>
-		<link rel="shortcut icon" href="../favicon.ico">
 
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-    </head>
-    <body class="backgroundcolorpreview">
-    	        <section class="about-section text-left">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+</head>
 
-            <div class="container">
-                <div class="row ">
-        <div class="wrapper previewtext">
-            <div class="line">
-                <span>Этот сайт использует автоматическое воспроизведение фоновых аудиозаписей.</span>
-            </div>
-            <div class="line">
-                <span>Нажимая кнопку "Начать" и продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.</span>
-            </div>
-            <div class="line">
-                <span>Для полного погружения рекомендуем использовать наушники.</span>
-            </div>
-            <div class="line">
-           <span><div class="buttoncontainer3"><a href="logo.html" class="btnfos btnfos-2">Вперёд</a></div></span>
-       </div>
-        </div></div></div></section>
-        <script>
-            const textrev = gsap.timeline();
+<body class="backgroundcolorpreview">
+	<section class="about-section text-left">
+		<div class="container">
+			<div class="row ">
+				<div class="wrapper previewtext">
+					<div class="line"> <span>Этот сайт использует автоматическое воспроизведение фоновых аудиозаписей.</span> </div>
+					<div class="line"> <span>Нажимая кнопку "Начать" и продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.</span> </div>
+					<div class="line"> <span>Для полного погружения рекомендуем использовать наушники.</span> </div>
+					<div class="line"> <span><div class="buttoncontainer3"><a href="logo.html" class="btnfos btnfos-2">Вперёд</a></div></span> </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+	const textrev = gsap.timeline();
+	textrev.from(".line span", 1.8, {
+		y: 200,
+		ease: "power4.out",
+		delay: 1,
+		skewY: 10,
+		stagger: {
+			amount: 0.4,
+		},
+	});
+	</script>
+</body>
 
-            textrev.from(".line span", 1.8, {
-                y: 200,
-                ease: "power4.out",
-                delay: 1,
-                skewY: 10,
-                stagger: {
-                    amount: 0.4,
-                },
-            });
-        </script>
-    </body>
 </html>
