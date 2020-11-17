@@ -304,18 +304,6 @@ ul {
   display: none;
 }
 
-.mainscreenlink {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height: 75vh;
-}
-
-.screenlink {
-  width: 100vw;
-  height: 100vh;
-}
-
 .buttoncontainer {
   display: table-cell;
   text-align: center;
@@ -523,10 +511,6 @@ ul {
   font-size: 1.5rem;
 }
 
-.section {
-  margin: 10px 0;
-}
-
 .text-fixed {
   position: fixed;
   bottom: 0;
@@ -565,7 +549,6 @@ ul {
   opacity: 0.4;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  ;
   background: transparent;
   border: none;
   position: absolute;
@@ -583,174 +566,7 @@ ul {
   top: 0;
 }
 
-.fade-out {
-  animation: fadeOut ease 2s;
-  -webkit-animation: fadeOut ease 8s;
-  -moz-animation: fadeOut ease 8s;
-  -o-animation: fadeOut ease 8s;
-  -ms-animation: fadeOut ease 8s;
-}
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
 
-  100% {
-    opacity: 0;
-  }
-}
 
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@-ms-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.anim-show {
-  opacity: 0;
-  transition: 1s;
-  animation: show 3s 1;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-  -webkit-animation-name: show;
-  -moz-animation-name: show;
-  -o-animation-name: show;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -o-animation-delay: 4s;
-  animation-delay: 4s;
-}
-
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.linkscreen {
-  width: 100vw;
-  height: 100vh;
-}
-
-.circlebutton {
-  border: 4px solid #d9730d;
-  display: inline-block;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  color: #d9730d;
-  line-height: 70px;
-  text-align: center;
-  font-size: 30px;
-  font-family: Circe Rounded;
-  transition: all .5s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 900px) {
-  .circlebutton {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 15px;
-  }
-}
-
-.circlebutton:hover {
-  background: #d9730d;
-  color: #FFF;
-  border: 4px solid #FFF;
-  text-decoration: none;
-}
-
-.scale {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin-top: 8%;
-  animation-name: fade-in;
-}
-
-.horizontalcenter {
-  position: absolute;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0%);
-}
-
-.backgroundanimation {
-  position: absolute;
-  z-index: -99999999;
-}
-
-@media screen and (max-width: 900px) {
-  .scale {
-    position: absolute;
-    z-index: 99999;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin-top: 28%;
-  }
-}
-
-.cross {
-  height: 25vh;
-}
-
-.previewtext {
-  position: absolute;
-  z-index: 99999;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-family: Akrobat Bold;
-  color: #FFF;
-  width: 75%;
-  text-align: center;
-}
 
