@@ -81,13 +81,13 @@ ul {
  *******************************************************
  */
 
-.previewbutton{
+.previewbutton {
   background: #FFF;
   color: #FF882A;
   border: none;
   position: relative;
   height: 60px;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   padding: 0 2em;
   cursor: pointer;
   transition: 800ms ease all;
@@ -95,21 +95,26 @@ ul {
   font-family: Akrobat Bold;
   line-height: 1.5;
   letter-spacing: 1px;
+  width: 70%;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-.previewbutton:hover{
+.previewbutton:hover {
   background: #FF882A;
   color: #FFF;
 }
 
-.previewbutton:before,button:after{
+.previewbutton:before, button:after{
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   height: 2px;
   width: 0;
-  background: #fff;
+  background: #FFF;
   transition: 400ms ease all;
 }
 
@@ -120,9 +125,9 @@ ul {
   bottom: 0;
 }
 
-.previewbutton:hover:before,button:hover:after{
-  width:100%;
-  transition:800ms ease all;
+.previewbutton:hover:before, button:hover:after{
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 
@@ -134,10 +139,17 @@ ul {
  */
 
 @media screen and (max-width: 40em) { /* 640/16 = 40em */
+  
   .header {
     padding: 0 5%;
   }
 
+  .previewtext {
+  width: 90%!important;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 1rem!important;
+  }
 }
 /*
  *******************************************************
@@ -147,6 +159,12 @@ ul {
 
 @media screen and (min-width: 40.00625em) { /* 640.1/16 = 40.00625em */
 
+  .previewtext {
+  width: 30%;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 0.5rem;
+  }
 }
 
 .previewtext {
@@ -162,6 +180,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 1px;
   font-size: 1.5rem;
+  border: 4px solid #FFF; 
 }
 
 .underline {
@@ -244,12 +263,6 @@ ul {
   font-family: Circe Rounded;
   letter-spacing: 0px;
   font-size: 1.5rem;
-}
-
-.text-fixed {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
 }
 
 #progress .item {
