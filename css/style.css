@@ -13,6 +13,7 @@
 body {
   overflow-y: hidden;
   overflow-x: hidden;
+  background: #FF882A;
 }
 
 a {
@@ -76,6 +77,58 @@ ul {
 
 /*
  *******************************************************
+ * Buttons
+ *******************************************************
+ */
+
+.previewbutton{
+  background: #FFF;
+  color: #FF882A;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  font-family: Akrobat Bold;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.previewbutton:hover{
+  background: #FF882A;
+  color: #FFF;
+}
+
+.previewbutton:before,button:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: 400ms ease all;
+}
+
+.previewbutton:after{
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.previewbutton:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+/*
+ *******************************************************
  * Media Query Small Screens
  *******************************************************
  */
@@ -128,46 +181,6 @@ ul {
   to {
     background-size: 100% 2px;
   }
-}
-
-.previewbutton{
-  background:#1AAB8A;
-  color:#fff;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1.6em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-
-.previewbutton:hover{
-  background:#fff;
-  color:#1AAB8A;
-}
-.previewbutton:before,button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #1AAB8A;
-  transition:400ms ease all;
-}
-
-.previewbutton:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-
-.previewbutton:hover:before,button:hover:after{
-  width:100%;
-  transition:800ms ease all;
 }
 
 .lottie-anim {
