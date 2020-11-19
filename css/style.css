@@ -57,6 +57,15 @@ ul {
   margin-right: auto;
 }
 
+button {
+  position: relative;
+  padding: 0 2em;
+  cursor: pointer;
+  outline: none;
+  font-family: Akrobat Bold;
+  letter-spacing: 1px;
+}
+
 
 /*
  *******************************************************
@@ -85,17 +94,11 @@ ul {
   background: #FFF;
   color: #FF882A;
   border: none;
-  position: relative;
   height: 60px;
   font-size: 1.6rem;
-  padding: 0 2em;
-  cursor: pointer;
-  transition: 800ms ease all;
-  outline: none;
-  font-family: Akrobat Bold;
   line-height: 1.5;
-  letter-spacing: 1px;
   width: 70%;
+  transition: 800ms ease all;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
@@ -141,8 +144,8 @@ ul {
 @media screen and (max-width: 40em) { /* 640/16 = 40em */
 
   .previewtext {
-  width: 90%!important;
-  font-size: 1rem!important;
+  width: 90%;
+  font-size: 1rem;
   }
 }
 /*
