@@ -203,20 +203,20 @@ button {
   pointer-events: none;
 }
 
-.page3 {
+.page {
   width: 100vw;
   height: 100vh;
-  position: relative;
-  background: url(../img/parents.svg) no-repeat center center fixed;
-  background-size: cover;
+
+}
+
+.page img {
+  padding: 0;
+  left: 0;
+  position: absolute;
 }
 
 #box {
   display: none;
-}
-
-.page:nth-child(2) {
-  background-size: cover;
 }
 
 .head {
