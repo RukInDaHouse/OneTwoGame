@@ -224,6 +224,16 @@ button {
   left: 0; 
 }
 
+.sectionblock {
+  height: 100vh;
+  display: inline-block;
+  padding: 0;
+  left: 0;
+  width: 8vw;
+  background: #000;
+  position: absolute;
+}
+
 .page img {
   padding: 0;
   left: 0;
