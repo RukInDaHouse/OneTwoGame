@@ -185,12 +185,12 @@ button {
 .arrowbtn:hover::after {
   animation-name: rotatecw;
   animation-duration: 2s;
-  border: 1px solid #000;
+  border: 1px solid #FFF;
 }
 .arrowbtn:hover::before {
   animation-name: rotateccw; 
   animation-duration: 3s;
-  border: 1px solid #000;
+  border: 1px solid #FFF;
 }
 .arrowbtn:hover::after, .arrowbtn:hover::before {
   left: 96px;
@@ -275,6 +275,12 @@ button {
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+
+.quiz {
+  width: 50%;
+  position: absolute;
+  right: 0;
 }
 
 .page {
