@@ -7,6 +7,15 @@
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
+    <style>
+        .backgroundimage {
+            z-index: -999999;
+        }
+
+        body {
+            background: #70AB54;
+        }
+    </style>
 <body>
 <main>
         
@@ -14,9 +23,10 @@
 
 
     <main role="main">
+<div class="page">
+<img class="backgroundimage" src="images/log.svg">
 
-
-<h1 class="head" id="stmt"></h1>
+<div class="quiz"><h1 class="head" id="stmt"></h1>
   <h2 class="text" id="desc"></h2>
 
 
@@ -39,13 +49,13 @@
 <div class="buttoncontainer2"><a href="index4.html" id="testComplete_btn" class="hide btnfos btnfos-1 transition">Вперёд</a></div>
   <div class="arrowcontainer">
     <div class="arrowbtn">
-      <span>IDLE</span>
+      <span><img src="images/button.svg"></span>
     </div>
-  </div>
+  </div></div>
 
 <audio id="theme" autoplay="autoplay">
      <source src="./volume/ep3.mp3" />     
- </audio>
+ </audio></div>
 </main>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
