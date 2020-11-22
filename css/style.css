@@ -66,6 +66,64 @@ button {
   letter-spacing: 1px;
 }
 
+.buttonquiz1 {
+  --c: goldenrod;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  font-weight: bold;
+  font-family: Circe Rounded;
+  letter-spacing: 0px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.buttonquiz1 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.buttonquiz1:hover {
+  color: #FFF;
+}
+
+.buttonquiz1:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.buttonquiz1 span:nth-child(1) {
+  --n: 1;
+}
+
+.buttonquiz1 span:nth-child(2) {
+  --n: 2;
+}
+
+.buttonquiz1 span:nth-child(3) {
+  --n: 3;
+}
+
+.buttoncontainer span:nth-child(4) {
+  --n: 4;
+}
+
 
 /*
  *******************************************************
@@ -145,6 +203,7 @@ button {
   justify-content: right;
   align-items: right;
 
+
 }
 
 .arrowbtn {
@@ -186,11 +245,15 @@ button {
   animation-name: rotatecw;
   animation-duration: 2s;
   border: 1px solid #FFF;
+  border-radius: 0.5em;
+
 }
 .arrowbtn:hover::before {
   animation-name: rotateccw; 
   animation-duration: 3s;
   border: 1px solid #FFF;
+  border-radius: 0.5em;
+
 }
 .arrowbtn:hover::after, .arrowbtn:hover::before {
   left: 96px;
@@ -532,6 +595,7 @@ svg {
     transform: translateX(-1000px);
   }
 }
+
 .buttoncontainer {
   text-align: center;
   width: 100%;
