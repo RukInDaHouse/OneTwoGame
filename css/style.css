@@ -377,6 +377,7 @@ button {
   border: none;
   position: absolute;
   text-align: right;
+  left: 0;
 }
 
 #next_btn {
@@ -530,4 +531,11 @@ svg {
     -moz-transform: translateX(-1000px);
     transform: translateX(-1000px);
   }
+}
+.buttoncontainer {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
