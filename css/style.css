@@ -518,8 +518,6 @@ button {
 
 .partsection1 {
   width: 10vw;
-  border-right: 0.5px solid #000;
-  border-bottom: 0.5px solid #000;
   height: 60vh;
   z-index: 9;
   top:0;
@@ -528,7 +526,6 @@ button {
 }
 .partsection2 {
   width: 10vw;
-  border-right: 0.5px solid #000;
   height: 40vh;
   z-index: 9;
   bottom:0;
@@ -537,7 +534,6 @@ button {
 }
 .partsection3 {
   width: 10vw;
-  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -546,7 +542,6 @@ button {
 }
 .partsection4 {
   width: 20vw;
-  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -555,7 +550,6 @@ button {
 }
 .partsection5 {
   width: 10vw;
-  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -564,7 +558,6 @@ button {
 }
 .partsection6 {
   width: 10vw;
-  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -573,7 +566,6 @@ button {
 }
 .partsection7 {
   width: 10vw;
-  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -582,7 +574,6 @@ button {
 }
 .partsection8 {
   width: 10vw;
-  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -591,7 +582,6 @@ button {
 }
 .partsection9 {
   width: 10vw;
-  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -600,7 +590,6 @@ button {
 }
 .partsection10 {
   width: 10vw;
-  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
