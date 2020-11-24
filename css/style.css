@@ -510,7 +510,7 @@ button {
 
 .partsection1 {
   width: 10vw;
-  border: 2px solid #000;
+  border: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -519,7 +519,7 @@ button {
 }
 .partsection2 {
   width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -528,7 +528,7 @@ button {
 }
 .partsection3 {
   width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -537,7 +537,7 @@ button {
 }
 .partsection4 {
   width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -546,7 +546,7 @@ button {
 }
 .partsection5 {
   width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -555,7 +555,7 @@ button {
 }
 .partsection6 {
   width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -564,44 +564,43 @@ button {
 }
 .partsection7 {
   width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
   position: absolute;
   left:60vw;
-    filter: blur(6px);s
 }
 .partsection8 {
   width: 10vw;
-  border: 2px solid #000;
-  height: 100vh;
-  z-index: 9;
-  top:0;
-  position: absolute;
-  left:0;
-}
-.partsection9 {
-  width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
   position: absolute;
   left:70vw;
 }
-.partsection10 {
+.partsection9 {
   width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
   position: absolute;
   left:80vw;
 }
+.partsection10 {
+  width: 10vw;
+  border-right: 0.5px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:90vw;
+}
 .partsection11 {
   width: 10vw;
-  border: 2px solid #000;
+  border: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
@@ -610,24 +609,59 @@ button {
 }
 .partsection12 {
   width: 10vw;
-  border: 2px solid #000;
+  border-right: 0.5px solid #000;
   height: 100vh;
   z-index: 9;
   top:0;
   position: absolute;
   left:100vw;
+  background: #000;
 }
 
-.blur {
-  z-index: 99; /* изображение размыто */
+.part img {
+  height: 100vh;
+   z-index: 99; /* изображение размыто */
   background-image: url(image.png);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   filter: blur(5px);
-  filter: url('blur.svg#blur'); /* путь к svg */
+
 }
+
+.partnum {
+position: absolute;
+left: 5%;
+top: 5%; 
+color: #000;
+  font-family: Circe Rounded;
+  letter-spacing: 0px;
+  line-height: 1;
+  font-weight: bold;
+
+}
+.partlock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+color: #000;
+  font-family: Circe Rounded;
+  letter-spacing: 0px;
+  line-height: 1;
+  font-weight: bold;
+
+}
+
+span{height:40px; width:40px; display:block; position:relative;}
+ 
+.zamok{width:38px; height:25px; margin-top:40px; background:#333; border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px; border-left:1px dashed #fff; border-right:1px dashed #fff}
+ 
+.zamok:before{content:''; height:10px; width:16px;display:b; border:5px solid #333; border-bottom:none; border-radius:50px 50px 0 0;-webkit-border-radius:50px 50px 0 0;-moz-border-radius:50px 50px 0 0; position:absolute; top:-15px; left:6px; }
+ 
+.zamok:after{content:'';width:5px; height:7px; background:#fff; border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px; border:5px; position:absolute; top:8px; left:17px; }
 
 
 .head {
