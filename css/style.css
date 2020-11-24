@@ -81,8 +81,6 @@ button {
   overflow: hidden;
   z-index: 1;
   transition: 0.5s;
-  margin: 1em;
-  display: inline;
 }
 
 .buttonquiz1 span {
@@ -290,17 +288,27 @@ button {
 .text {
   font-size: 1rem;
   text-align: center;
+  width: 100%;
 }
 
 .quiz {
-  width: 100%;
-  right: 0%;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .buttonquiz1 {
   font-size: 1rem;
   width: 12em;
   height: 3em;
+}
+
+#progress {
+  width: 90%;
+  margin-top: 5%;
   }
 }
 /*
@@ -331,6 +339,17 @@ button {
 .quiz {
   width: 50%;
   right: 10%;
+}
+
+.buttonquiz1 {
+  font-size: 1.3rem;
+  width: 12em;
+  height: 3em;
+  }
+
+#progress {
+  width: 100%;
+  margin-top: 5%;
   }
 }
 
