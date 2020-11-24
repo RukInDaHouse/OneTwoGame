@@ -372,7 +372,8 @@ button {
   text-align: center;
   line-height: 1.5;
   letter-spacing: 1px;
-  border: 4px solid #FFF; 
+  border: 4px solid #FFF;
+  background: #FF882A; 
 }
 
 .underline {
@@ -425,6 +426,22 @@ button {
   width: 100%;
   height: 50%;
   left: 0; 
+}
+
+.rightcolor {
+  background: #C5E5E5;
+  left:0;
+}
+
+.leftcolor {
+  background: #C5E5E5;
+  right:0;
+}
+.leftcolor,.rightcolor {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0; 
 }
 
 .sectionblock {
