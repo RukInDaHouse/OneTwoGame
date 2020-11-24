@@ -6,59 +6,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title></title>
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	</head>
-	<body data-barba="wrapper">
-        <ul class="transition">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-<main data-barba="container" data-barba-namespace="home">
-        <section class="about-section text-left">
- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_6ytza3be.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_j38sljy0.json" background="transparent" speed="1" style="width: 100%; height: 100%;"></lottie-player>
-            <div class="container">
-                <div class="row ">
-                   <div class="col-md-3 mx-auto pad"></div>
-                    <div class="col-md-3 mx-auto pad"><h1 class="head" id="stmt"></h1></div>
-                    <div class="col-md-4 mx-auto pad">
-<div class="section">
-<div>
-<div id="progress" class="section"></div></div>
-  <h2 class="text" id="desc"></h2>
+	<body>
+<main role="main">
+<div class="page">
+<img class="backgroundimage" src="images/parents.svg"></div>
 
-</div>
+<div class="quiz"><h1 class="head" id="stmt"></h1>
+  <h2 class="text" id="desc"></h2><a id="next_btn" class="disable" onclick="nextQuestion()"><img src="img/arrowactive.svg" alt="" /></a>
+<div class="buttoncontainer">
+  <button class="buttonquiz1" id="btnTrue" onclick="btnClick(true)">Согласен<span></span><span></span><span></span><span></span></button>
 
-<h2 class="text-center"><div class="section buttons">
-	<div class="buttoncontainer ">
-  <button class="btnfos btnfos-1" id="btnTrue" onclick="btnClick(true)">Говорят</button>
+  <button class="buttonquiz1" id="btnFalse" onclick="btnClick(false)">Не согласен<span></span><span></span><span></span><span></span></button>
 </div>
 <div class="buttoncontainer">
-  <button class="btnfos btnfos-2 " id="btnFalse" onclick="btnClick(false)">Не говорят</button>
-</div>
-</div></h2>
-                        
-                    </div><div class="col-md-1 mx-auto pad"><a id="next_btn" class="disable" onclick="nextQuestion()"><img src="img/arrowactive.svg" alt="" /></a></div>
-                                   
-                   
+<div id="progress"></div></div>
+</div></main>
 
 
-
-                        </div>
-                    </div><div class="buttoncontainer2"><a href="index6.html" id="testComplete_btn" class="hide btnfos btnfos-1 transition">Вперёд</a></div>
-                    </section>
-</main>
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <div class="arrowcontainer"><a href="index4.html" id="testComplete_btn" class="hide">
+    <div class="arrowbtn">
+      <span><img src="images/button.svg"></span>
+    </div>
+  </a></div></div>
     <script src="./js/script.js"></script>
-		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./js/script3.js"></script>
 	</body>
 </html>
