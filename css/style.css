@@ -467,6 +467,7 @@ button {
   width: 100%;
   height: 50%;
   left: 0; 
+  z-index: -5;
 }
 
 .rightcolor {
@@ -500,11 +501,134 @@ button {
   left: 0;
   bottom: 0;
   position: absolute;
+  z-index: -1;
 }
 
 #box {
   display: none;
 }
+
+.partsection1 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:0;
+}
+.partsection2 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:10vw;
+}
+.partsection3 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:20vw;
+}
+.partsection4 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:30vw;
+}
+.partsection5 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:40vw;
+}
+.partsection6 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:50vw;
+}
+.partsection7 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:60vw;
+    filter: blur(6px);s
+}
+.partsection8 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:0;
+}
+.partsection9 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:70vw;
+}
+.partsection10 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:80vw;
+}
+.partsection11 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:90vw;
+}
+.partsection12 {
+  width: 10vw;
+  border: 2px solid #000;
+  height: 100vh;
+  z-index: 9;
+  top:0;
+  position: absolute;
+  left:100vw;
+}
+
+.blur {
+  z-index: 99; /* изображение размыто */
+  background-image: url(image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  filter: blur(5px);
+  filter: url('blur.svg#blur'); /* путь к svg */
+}
+
 
 .head {
   text-align: center;
