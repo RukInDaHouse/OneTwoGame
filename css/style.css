@@ -284,6 +284,21 @@ button {
   width: 90%;
   font-size: 1rem;
   }
+
+.head {
+  font-size: 1.5rem;
+
+  }
+
+.text {
+  font-size: 1rem;
+  text-align: center;
+  }
+
+.quiz {
+  width: 100%;
+  right: 0%;
+  }
 }
 /*
  *******************************************************
@@ -296,6 +311,23 @@ button {
 .previewtext {
   width: 30%;
   font-size: 1.5rem;  
+}
+
+
+.head {
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+.text {
+  font-size: 1.5rem;
+  text-align: right;
+
+}
+
+.quiz {
+  width: 50%;
+  right: 10%;
   }
 }
 
@@ -341,9 +373,7 @@ button {
 }
 
 .quiz {
-  width: 50%;
   position: absolute;
-  right: 0;
 }
 
 .page {
@@ -394,14 +424,13 @@ button {
   letter-spacing: 0px;
   background: url(../img/buble3.svg) no-repeat center center;
   background-size: cover;
-  font-size: 2.5rem;
 }
 
 .text {
-  text-align: left;
   font-family: Circe Rounded;
   letter-spacing: 0px;
-  font-size: 1.5rem;
+  line-height: 1;
+  color: #000;
 }
 
 #progress .item {
@@ -412,7 +441,7 @@ button {
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
-  background: #fff;
+  background: #FFF;
 }
 
 #progress .item.current {
