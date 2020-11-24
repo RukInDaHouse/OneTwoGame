@@ -1,74 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title></title>
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	</head>
-	<body>
-<div class="pad balloons"><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_w2ihnjfp.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
-	        <section class="about-section text-left">
-            <div class="container">
-                <div class="row">
-    <div class="col-md-2 mx-auto cross" onclick="chpok('text'),chpok('text2')"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title></title>
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <style>
+        .backgroundimage {
+            z-index: -999999;
+        }
 
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
+        body {
+            background: #70AB54;
+        }
+    </style>
+<body>
+<main role="main">
+<div class="page">
+<img class="backgroundimage" src="images/parents.svg"></div>
 
-	<div class="col-md-1 mx-auto cross"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-2 mx-auto cross"><img src="img/Мишень.svg"></div>
-	<div class="col-md-1 mx-auto cross"></div>
+<div class="quiz"><h1 class="head" id="stmt"></h1>
+  <h2 class="text" id="desc"></h2><a id="next_btn" class="disable" onclick="nextQuestion()"><img src="img/arrowactive.svg" alt="" /></a>
+<div class="buttoncontainer">
+  <button class="buttonquiz1" id="btnTrue" onclick="btnClick(true)">Согласен<span></span><span></span><span></span><span></span></button>
 
-	<div class="col-md-4 mx-auto cross" id="text" style="display: none;"><img src="img/Бабл для профессии 3.svg"></div>
-	<div class="col-md-2 mx-auto cross"></div>
-	<div class="col-md-4 mx-auto cross" id="text2" style="display: none;"><img src="img/Бабл для профессии 3.svg"></div>
-	<div class="col-md-2 mx-auto cross"></div>
-
-
-	
-
-</div></div></section>
-                   
-                    
- 
-                                   
-                   
+  <button class="buttonquiz1" id="btnFalse" onclick="btnClick(false)">Не согласен<span></span><span></span><span></span><span></span></button>
+</div>
+<div class="buttoncontainer">
+<div id="progress"></div></div>
 
 
 
-  
-<div class="buttoncontainer2"><a href="index4.html" id="testComplete_btn" class="hide btnfos btnfos-1 transition">Вперёд</a></div>
-                    </section>
+  <div class="arrowcontainer"><a href="index4.html" id="testComplete_btn" class="hide">
+    <div class="arrowbtn">
+      <span><img src="images/button.svg"></span>
+    </div>
+  </a></div></div>
 
+<audio id="theme" autoplay="autoplay">
+     <source src="./volume/ep3.mp3" />     
+ </audio></div>
+</main>
 
-		
-	
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./js/script2.js"></script>
 
-	</body>
-<script>
-function chpok(id){
-    elem = document.getElementById(id); //находим блок div по его id, который передали в функцию
-    state = elem.style.display; //смотрим, включен ли сейчас элемент
-    if (state =='none') elem.style.display=''; //если включен, то выключаем
-}
-</script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </body>
 </html>
