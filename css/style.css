@@ -120,6 +120,13 @@ button {
   --n: 4;
 }
 
+.page img {
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
 
 /*
  *******************************************************
@@ -198,8 +205,10 @@ button {
   display: flex;
   justify-content: right;
   align-items: right;
+}
 
-
+.arrowbtn img {
+  float: right;
 }
 
 .arrowbtn {
@@ -332,8 +341,7 @@ button {
 
 .text {
   font-size: 1.5rem;
-  text-align: right;
-
+  text-align: left;
 }
 
 .quiz {
@@ -345,7 +353,7 @@ button {
   font-size: 1.3rem;
   width: 12em;
   height: 3em;
-  }
+}
 
 #progress {
   width: 100%;
@@ -429,7 +437,7 @@ button {
   position: absolute;
 }
 
-.page img {
+.backgroundimage {
   padding: 0;
   left: 0;
   bottom: 0;
@@ -489,20 +497,17 @@ button {
   filter: grayscale(100%);
   background: transparent;
   border: none;
-  position: absolute;
-  text-align: right;
-  left: 0;
 }
 
 #next_btn {
-  background: transparent;
   border: none;
   font-weight: bold;
-  font-size: 2.5rem;
-  position: absolute;
-  text-align: right;
-  right: -15%;
-  top: 0;
+  width: 100%;
+}
+
+#next_btn img {
+  width: 10%;
+  float: right;
 }
 
 /*
