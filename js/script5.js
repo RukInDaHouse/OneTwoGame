@@ -2,21 +2,21 @@ console.clear();
 
 var root  = document.documentElement;
 var body  = document.body;
-var pages = document.querySelectorAll(".page");
+var animblocks = document.querySelectorAll(".animblock");
 var tiles = document.querySelectorAll(".tile");
 
 for (var i = 0; i < tiles.length; i++) {  
-  addListeners(tiles[i], pages[i]);
+  addListeners(tiles[i], animblocks[i]);
 }
 
-function addListeners(tile, page) {
+function addListeners(tile, animblock) {
   
   tile.addEventListener("click", function() {
-    animateHero(tile, page);
+    animateHero(tile, animblock);
   });
   
-  page.addEventListener("click", function() {
-    animateHero(page, tile);
+  animblock.addEventListener("click", function() {
+    animateHero(animblock, tile);
   });  
 }
 
@@ -27,7 +27,7 @@ function animateHero(fromHero, toHero) {
   var from = calculatePosition(fromHero);
   var to = calculatePosition(toHero);
   
-  TweenLite.set([fromHero, toHero], { visibility: "hidden" });
+  TweenLite.set([fromHero, toHero], { visibility: "visible", });
   TweenLite.set(clone, { position: "absolute", margin: 0 });
   
   body.appendChild(clone);  
@@ -43,11 +43,11 @@ function animateHero(fromHero, toHero) {
   };
    
   TweenLite.set(clone, from);  
-  TweenLite.to(clone, 0.3, style)
+  TweenLite.to(clone, 3, style)
     
   function onComplete() {
     
-    TweenLite.set(toHero, { visibility: "visible" });
+    TweenLite.set(toHero, { visibility: "visible", });
     body.removeChild(clone);
   }
 }
@@ -56,8 +56,8 @@ function calculatePosition(element) {
     
   var rect = element.getBoundingClientRect();
   
-  var scrollTop  = window.pageYOffset || root.scrollTop  || body.scrollTop  || 0;
-  var scrollLeft = window.pageXOffset || root.scrollLeft || body.scrollLeft || 0;
+  var scrollTop  = window.animblockYOffset || root.scrollTop  || body.scrollTop  || 0;
+  var scrollLeft = window.animblockXOffset || root.scrollLeft || body.scrollLeft || 0;
   
   var clientTop  = root.clientTop  || body.clientTop  || 0;
   var clientLeft = root.clientLeft || body.clientLeft || 0;
