@@ -44,7 +44,7 @@ function showStmt(idx) {
 
 function applyComplete(val) {
   val = (val) ? true : false;
-  document.getElementById('desc').style.visibility = (val) ? 'visible' : 'hidden';
+  document.getElementById('desc').style.display = (val) ? 'block' : 'none';
   document.getElementById('btnTrue').disabled = val;   
   document.getElementById('btnFalse').disabled = val;  
   checkProgressBar()
