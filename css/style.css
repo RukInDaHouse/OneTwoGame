@@ -83,6 +83,12 @@ button {
   transition: 0.5s;
 }
 
+.empty {
+  width: 5%;
+}
+
+
+
 .buttonquiz1 span {
   position: absolute;
   width: 25%;
@@ -310,7 +316,7 @@ button {
 }
 
 .buttonquiz1 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 12em;
   height: 3em;
 }
@@ -435,12 +441,14 @@ button {
   left: calc(var(--x) * 1%);
   position: absolute;
   top: calc((var(--y) + 50) * -1px);
+  z-index: -999999;
 }
 .rain__drop path {
   fill: #a1c6cc;
   opacity: var(--o);
   -webkit-transform: scaleY(calc(var(--s) * 1.5));
           transform: scaleY(calc(var(--s) * 1.5));
+          z-index: -999999;
 }
 @-webkit-keyframes drop {
   90% {
@@ -510,7 +518,8 @@ button {
 
 .partsection1 {
   width: 10vw;
-  border: 0.5px solid #000;
+  border-right: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
   height: 60vh;
   z-index: 9;
   top:0;
@@ -672,7 +681,7 @@ color: #000;
 
 }
 
-span{height:40px; width:40px; display:block; position:relative;}
+.rain span {height:40px; width:40px; display:block; position:relative; z-index: -999999;}
  
 .zamok{width:38px; height:25px; margin-top:40px; background:#333; border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px; border-left:1px dashed #fff; border-right:1px dashed #fff}
  
