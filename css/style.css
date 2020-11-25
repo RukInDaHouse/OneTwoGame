@@ -229,11 +229,12 @@ button {
   height: 64px;
   line-height: 64px;
   transition: all 0.3s;
-  span {
+}
+
+ .arrowbtn span {
     transition: all 0.3s;
     tranform: scale(1, 1);
   }
-}
 
 .arrowbtn::before, .arrowbtn::after {
   content: '';
@@ -309,6 +310,7 @@ button {
   font-size: 1rem;
   text-align: center;
   width: 100%;
+
 }
 
 .quiz {
@@ -705,6 +707,7 @@ color: #000;
 }
 
 .hide {
+  display: none;
 }
 
 .disable {
@@ -871,10 +874,23 @@ svg {
 
 .buttoncontainer {
   text-align: center;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 15%;
+  width: 50%;
+    right: 10%;
+}
+.buttoncontainer2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+width: 50%;
+    right: 10%;
 }
 
   .tile {
