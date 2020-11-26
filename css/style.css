@@ -874,18 +874,36 @@ svg {
   transform: scale3d(1, 1, 1);
 }
 
+   @-webkit-keyframes flash {
+    100% {opacity: 1;} 
+    0% {opacity: 0;}
+   }
+   @-moz-keyframes flash {
+    100% {opacity: 1;} 
+    50% {opacity: 0;}
+   }
+   @-o-keyframes flash {
+    100% {opacity: 1;} 
+    50% {opacity: 0;}
+   }
+   @keyframes flash {
+    100% {opacity: 1;} 
+    0% {opacity: 0;}
+   }
+   .flash {
+    -webkit-animation-name: flash;
+    -moz-animation-name: flash;
+    -o-animation-name: flash;
+    animation-name: flash;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
 
-.block {
-animation:anim 3s;
-animation-duration:3s;
-width: 200px;
-height: 200px;
-background:red;
-position: absolute;
-top:0;  
-}
- 
-@keyframes anim {
-from {left:-100%;}
-to {left:0;}
-}
