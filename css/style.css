@@ -222,7 +222,7 @@ button {
 
 .arrowbtn {
   position: absolute;
-  right: 5%;
+  right: 3%;
   bottom: 15%;
   color: white;
   width: 256px;
@@ -1012,3 +1012,21 @@ svg {
     animation-fill-mode: forwards;
 }
 
+.svg {
+  width: 100%;
+  height: 99%;
+  margin: 0;
+  padding: 0;
+  transition: transform 10s;
+}
+
+.map {
+  margin: 0;
+  padding: 0;
+  transition: transform 10s;
+}
+
+.district {
+  cursor: pointer;
+
+}
