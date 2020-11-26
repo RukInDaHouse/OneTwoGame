@@ -517,44 +517,14 @@ button {
   bottom: 0;
   position: absolute;
   z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 #box {
   display: none;
 }
 
-.partsection1 {
-  width: 10vw;
-  height: 60vh;
-  z-index: 9;
-  top:0;
-  position: absolute;
-  left:0;
-}
-.partsection2 {
-  width: 10vw;
-  height: 40vh;
-  z-index: 9;
-  bottom:0;
-  position: absolute;
-  left: 0vw;
-}
-.partsection3 {
-  width: 10vw;
-  height: 100vh;
-  z-index: 9;
-  top:0;
-  position: absolute;
-  left:10vw;
-}
-.partsection4 {
-  width: 20vw;
-  height: 100vh;
-  z-index: 9;
-  top:0;
-  position: absolute;
-  left:20vw;
-}
 .partsection5 {
   width: 10vw;
   height: 100vh;
@@ -563,6 +533,7 @@ button {
   position: absolute;
   left:40vw;
 }
+
 .partsection6 {
   width: 10vw;
   height: 100vh;
@@ -571,6 +542,7 @@ button {
   position: absolute;
   left:50vw;
 }
+
 .partsection7 {
   width: 10vw;
   height: 100vh;
@@ -579,6 +551,7 @@ button {
   position: absolute;
   left:60vw;
 }
+
 .partsection8 {
   width: 10vw;
   height: 100vh;
@@ -587,6 +560,7 @@ button {
   position: absolute;
   left:70vw;
 }
+
 .partsection9 {
   width: 10vw;
   height: 100vh;
@@ -734,6 +708,7 @@ svg {
   bottom: 0;
   overflow: hidden;
   transform: translateZ(0);
+  height: 10%;
 }
 
 .cloud {
@@ -897,4 +872,20 @@ svg {
   -ms-transform: scale3d(1, 1, 1);
   -o-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
+}
+
+
+.block {
+animation:anim 3s;
+animation-duration:3s;
+width: 200px;
+height: 200px;
+background:red;
+position: absolute;
+top:0;  
+}
+ 
+@keyframes anim {
+from {left:-100%;}
+to {left:0;}
 }
