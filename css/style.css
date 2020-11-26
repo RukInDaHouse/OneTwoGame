@@ -832,15 +832,17 @@ svg {
   bottom: 15%;
   width: 50%;
   right: 10%;
+  z-index: 9;
 }
 
-.buttoncontainer2 {
+.progresscontainer {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 10%;
+  z-index: 11111;
   width: 50%;
   right: 10%;
 }
@@ -925,6 +927,23 @@ svg {
     0% {opacity: 0;}
    }
 
+     @-webkit-keyframes flashmodal {
+    100% {opacity: 1;} 
+    0% {opacity: 0;}
+   }
+   @-moz-keyframes flashmodal {
+    100% {opacity: 1;} 
+    50% {opacity: 0;}
+   }
+   @-o-keyframes flashmodal {
+    100% {opacity: 1;} 
+    50% {opacity: 0;}
+   }
+   @keyframes flashmodal {
+    100% {opacity: 1;} 
+    0% {opacity: 0;}
+   }
+
 .flashplane {
     -webkit-animation-name: flashplane;
     -moz-animation-name: flashplane;
@@ -968,6 +987,23 @@ svg {
     -moz-animation-delay: 1s;
     -o-animation-delay: 1s;
     animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.flashmodal {
+    -webkit-animation-name: flashmodal;
+    -moz-animation-name: flashmodal;
+    -o-animation-name: flashmodal;
+    animation-name: flashmodal;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     -o-animation-duration: 1s;
