@@ -8,6 +8,12 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
     <style>
+      .backgroundimage {
+        z-index: -99999999999999;
+      }
+      .buttoncontainer {
+        z-index: 99999999999999999999;
+      }
         body {
             background: #70AB54;
         }
@@ -33,7 +39,7 @@
 <div class="empty"></div>
   <button class="buttonquiz1" id="btnFalse" onclick="btnClick(false)">Не согласен<span></span><span></span><span></span><span></span></button>
 </div>
-<div class="buttoncontainer2">
+<div class="progresscontainer">
 <div id="progress"></div></div>
 <div class="rain">
   <svg class="rain__drop" preserveAspectRatio="xMinYMin" viewBox="0 0 5 50" style="--x: 99; --y: 96; --o: 0.0011858982971713061; --a: 1.3278705053587623; --d: 0.27393089299825624; --s: 0.8717300518600526">
