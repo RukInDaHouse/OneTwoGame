@@ -29,3 +29,17 @@ while (i--) {
     svg.style.transform = "scale(" + scale + ")";
   };
 }
+
+var current = {
+        x: 0,
+        y: 0,
+        zoom: 1
+    },
+    con = document.getElementById('container');
+
+con.onclick = function(e) {
+    var coef = e.shiftKey || e.ctrlKey ? 0.5 : 3,
+        nz = current.zoom * coef;
+    con.style.transform = 'translate(' + '-50%, ' + '-50%) ' +
+        'scale(' + nz + ')';
+};
